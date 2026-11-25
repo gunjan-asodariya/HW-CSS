@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            padding: 0px;
+            width: 0px;
+        } */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            /* border: 2px solid black; */
+            width: auto;
+            height: fit-content;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .cart{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1%;
+        }
+        .cart p{
+            font-weight: bolder;
+        }
+        .hero{
+            background-image: url(kw-background.png);
+            background-repeat: no-repeat;
+            background-size:100% 100%;
+            background-position: center;
+            /* width: auto; */
+            height: 50%;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+            font-size: xx-large;
+            color: white;
+            }
+            .heading{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                /* border: 2px solid black; */
+            }
+            .body{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                /* padding: 50px; */
+                /* border: 2px solid black; */
+            }
+            .books{
+                display: flex;
+                /* justify-content: space-between; */
+                align-items: center;
+                gap: 30px;
+                /* border: 2px solid black; */
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 1%;
+                flex-wrap: wrap;
+                align-content: space-around;
+            }
+            .cards{
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                justify-content: center;
+                line-height: 3px;
+                /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+                padding: 10px;
+        
+            }
+            .games{
+                display: flex;
+                justify-content: space-between;
+                gap: 100px;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 1%;
+                flex-wrap: wrap;
+                align-content: space-between;
+            }
+            .love{
+                display: flex;
+                justify-content: space-between;
+                gap: 100px;
+                padding-left: 70px;
+                padding-right: 70px;
+                padding-top: 1%;
+                flex-wrap: wrap;
+                align-content: space-between;
+            }
+            .button{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .cart-button{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 4px;
+                background-color: blue;
+                width: 80px;
+                height: 30px;
+                color: white;
+                padding: 7px;
+                font-size: medium;
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="kw-logo.png" alt="" width="100px">
+            </div>
+            <div class="cart">
+                <img src="cart-icon.png" alt="" width="20px" height="20px">
+                <p>Cart items(0)</p>
+            </div>
+        </nav>
+        <div class="hero">
+            <h3>
+                Shop. <br> Have Fun. <br> Repeat.
+            </h3>
+            <br>
+            <p>#NewandNow</p>
+        </div>
+        <div class="body">
+            <div class="heading">
+                <div style="padding-left: 70px;font-size: larger; font-weight: bolder;">Discover New Books</div>
+                <div class="books">
+                    <div class="cards">
+                        <img src="book1.png" alt="" height="300px">
+                        <h2>This is Our pact</h2>
+                        <p style="color: gray;">Ryan Andrws</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="book2.png" alt="" height="300px">
+                        <h2>The famous five</h2>
+                        <p style="color: gray;">Guid Blyton</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="book3.png" alt="" height="300px">
+                        <h2>Matilda</h2>
+                        <p style="color: gray;">Roald Dahl</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="book4.png" alt="" height="300px">
+                        <h2>Harry Potter</h2>
+                        <p style="color: gray;">JK Rowling</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="book5.png" alt="" height="300px">
+                        <h2>For Young Readers</h2>
+                        <p style="color:gray;">Ruskin Bond</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="book6.png" alt="" height="300px">
+                        <h2>Wimpy Kid - DIY</h2>
+                        <p style="color: gray;">Jiney Keffin</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">
+                <div style="padding-left: 70px;font-size: larger; font-weight: bolder;">Discover New Games</div>
+                <div class="games">
+                    <div class="cards">
+                        <img src="dart-board.png" alt="" height="300px" width="300px">
+                        <h2>Dart Board</h2>
+                        <p style="color: gray;">Wooden board, 16 inches</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="connect-four.png" alt="" height="300px" width="300px">
+                        <h2>Connect 4</h2>
+                        <p style="color: gray;">Board game , multiplayer</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="jenga.png" alt="" height="300px" width="300px">
+                        <h2>jenga</h2>
+                        <p style="color: gray;">Wooden blocks, 54 pieces</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="monopoly.png" alt="" height="300px" width="300px">
+                        <h2>Monopoly</h2>
+                        <p style="color: gray;">1.61 x 15.75 x 10.51 inches</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heading">
+                <div style="padding-left: 70px;font-size: larger; font-weight: bolder;">Handmade With Love</div>
+                <div class="love">
+                    <div class="cards">
+                        <img src="birthday-card.png" alt="" height="300px" width="300px">
+                        <h2>Birthday Card</h2>
+                        <p style="color: gray;">Handmade With Love</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="bookmarks.png" alt="" height="300px" width="300px">
+                        <h2>Bookmarks</h2>
+                        <p style="color: gray;">Handmade With Love</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="stuffed-toy.png" alt="" height="300px" width="300px">
+                        <h2>Stuffed toys</h2>
+                        <p style="color: gray;">Handmade With Love</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <img src="dream-catcher.png" alt="" height="300px" width="300px">
+                        <h2>Dream Catcher drawing</h2>
+                        <p style="color: gray;">Handmade With Love</p>
+                        <div class="button">
+                            <p>$5</p>
+                            <button class="cart-button">Add
+                                <img src="cart-icon-white.png" alt="" height="15px" width="15px">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
