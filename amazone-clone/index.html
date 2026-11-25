@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e3e6e6;
+}
+
+.header {
+    width: 100%;
+    background: #131921;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 12px;
+    min-height: 40px;
+}
+
+.logo {
+    font-size: 15px;
+    height: 45px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #ff9900;
+}
+
+.location {
+    font-size: 11px;
+    min-width: 105px;
+    cursor: pointer;
+}
+
+.location p {
+    color: #ccc;
+    margin-left: 17px;
+}
+
+.location strong {
+    font-size: 12px;
+}
+
+
+.search {
+    display: flex;
+    flex: 1;
+    height: 35px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search select {
+    width: 55px;
+    border: none;
+    background: #e6e6e6;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.search button {
+    width: 38px;
+    border: none;
+    background: #febd69;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.language {
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.account, .orders {
+    font-size: 11px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.account strong,
+.orders strong {
+    font-size: 12px;
+}
+
+
+.cart {
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.navbar {
+    background: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 7px 12px;
+    font-size: 12px;
+    min-height: 28px;
+    overflow: hidden;
+}
+
+.navbar div {
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.navbar div:hover {
+    border: 1px solid white;
+    padding: 4px;
+}
+
+.all {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #d9e5e8;
+}
+
+
+/* BANNER SECTION */
+.banner {
+    width: 100%;
+    height: 190px;
+
+    background: linear-gradient(
+        to right,
+        #286477,
+        #4a8595,
+        #294b57
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    color: white;
+}
+
+
+/* BANNER TEXT */
+.banner-text {
+    width: 28%;
+}
+
+.banner-text h2 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.banner-text small {
+    font-size: 11px;
+}
+
+.offers {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+
+/* BANNER IMAGE */
+.banner-image {
+    width: 35%;
+    height: 170px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* ARROW BUTTONS */
+.banner button {
+    position: absolute;
+    top: 40%;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 25px;
+}
+
+.right-arrow {
+    right: 25px;
+}
+
+
+/* PRODUCT SECTION */
+.products {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 12px;
+
+    padding: 10px 20px;
+}
+
+
+/* COMMON CARD */
+.card {
+    background: white;
+    padding: 12px;
+    min-width: 0;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* PRODUCT GRID */
+.product-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+}
+
+.product-grid img {
+    width: 100%;
+    height: 68px;
+    object-fit: cover;
+}
+
+.product-grid p {
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+
+/* BIG PRODUCT IMAGE */
+.big-image {
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+}
+
+.card > p {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+
+/* RIGHT SECTION */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* SIGN IN CARD */
+.sign-card {
+    background: white;
+    padding: 15px;
+}
+
+.sign-card h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.sign-card button {
+    background: #ffd814;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* LAPTOP ADVERTISEMENT */
+.ad-card {
+    background: #a6efbd;
+    padding: 15px;
+    text-align: center;
+}
+
+.ad-card h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.ad-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 850px) {
+
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .banner-text {
+        width: 40%;
+    }
+
+    .banner-image {
+        width: 40%;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .products {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .banner {
+        height: 180px;
+    }
+
+    .banner-text {
+        width: 50%;
+        padding-left: 15px;
+    }
+
+    .banner-text h2 {
+        font-size: 17px;
+    }
+
+    .banner-text p {
+        font-size: 13px;
+    }
+
+    .banner-image {
+        width: 45%;
+    }
+
+    .offers {
+        font-size: 8px;
+        gap: 5px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+
+    <div class="location">
+        <p>Hello</p>
+        <strong>📍 Select your address</strong>
+    </div>
+
+    <div class="search">
+        <select>
+            <option>All</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Books</option>
+        </select>
+
+        <input type="text" placeholder="Search Amazon.in">
+
+        <button>⌕</button>
+    </div>
+
+    <div class="language">
+        🇮🇳 EN ▾
+    </div>
+
+    <div class="account">
+        <span>Hello, Sign in</span>
+        <br>
+        <strong>Account & Lists ▾</strong>
+    </div>
+
+    <div class="orders">
+        <span>Returns</span>
+        <br>
+        <strong>& Orders</strong>
+    </div>
+
+    <div class="cart">
+        🛒 Cart
+    </div>
+
+</header>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+
+    <div class="all">☰ All</div>
+    <div>Best Sellers</div>
+    <div>Mobiles</div>
+    <div>Customer Service</div>
+    <div>Today's Deals</div>
+    <div>Fashion</div>
+    <div>Electronics</div>
+    <div>Books</div>
+    <div>Prime ▾</div>
+    <div>New Releases</div>
+    <div>Home & Kitchen</div>
+    <div>Amazon Pay</div>
+
+    <div class="prime">
+        <span>prime</span> day
+        <small>23rd - 24th July</small>
+    </div>
+
+</nav>
+<section class="banner">
+
+        <div class="banner-text">
+            <h2>Under ₹1,999</h2>
+
+            <p>Top rated Electronics<br>
+            & accessories</p>
+
+            <small>Extra up to 10% off via coupons</small>
+
+            <div class="offers">
+                <span>🚚 PAY ON DELIVERY</span>
+                <span>🎁 EASY RETURNS</span>
+            </div>
+        </div>
+
+        <div class="banner-image">
+            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=500"
+                 alt="Electronics">
+        </div>
+
+        <button class="left-arrow">❮</button>
+        <button class="right-arrow">❯</button>
+
+    </section>
+
+
+    <!-- Shopping Cards -->
+    <section class="products">
+
+        <!-- Card 1 -->
+        <div class="card">
+
+            <h3>Upgrade your home | Amazon Brands & more</h3>
+
+            <div class="product-grid">
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=300">
+                    <p>Smart LED TVs</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=300">
+                    <p>Appliances</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300">
+                    <p>Furniture</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=300">
+                    <p>Kitchen products</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 2 -->
+        <div class="card">
+
+            <h3>Revamp your home in style</h3>
+
+            <div class="product-grid">
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=300">
+                    <p>Bedsheets & curtains</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=300">
+                    <p>Home decoration</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1594620302200-9a762244a156?w=300">
+                    <p>Home storage</p>
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=300">
+                    <p>Lighting solutions</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="card">
+
+            <h3>Up to 70% off | Clearance store</h3>
+
+            <img class="big-image"
+                 src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500"
+                 alt="Laptop">
+
+            <p>Explore electronics and accessories</p>
+
+        </div>
+
+
+        <!-- Card 4 -->
+        <div class="right-section">
+
+            <div class="sign-card">
+
+                <h3>Sign in for your best experience</h3>
+
+                <button>Sign in securely</button>
+
+            </div>
+
+            <div class="ad-card">
+
+                <h3>LAPTOPS<br>FROM TOP BRANDS</h3>
+
+                <img src="image 28.png" alt="">
+
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+</body>
+</html>
